@@ -33,7 +33,7 @@ fi
 cleanup_backups() {
     local backup_dir="$1"
     if [ -n "$(ls -A "$backup_dir")" ]; then
-        ls -dt "$backup_dir"/* | tail -n +"$((RETAIN_BACKUPS_SHORT+2))" | xargs rm -rf
+        ls -dt "$backup_dir"/* | tail -n +"$((${RETAIN_BACKUPS_SHORT}+2))" | xargs rm -rf
     fi
 }
 
