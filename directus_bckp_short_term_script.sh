@@ -32,8 +32,8 @@ fi
 # Keep only the latest backups
 cleanup_backups() {
     local backup_dir="$1"
-    echo "$(ls -A "$backup_dir")"
     if [ -n "$(ls -A "$backup_dir")" ]; then
+        echo "$((${RETAIN_BACKUPS_SHORT}+2))"
         ls -dt "$backup_dir"/* | tail -n +"$((${RETAIN_BACKUPS_SHORT}+2))" | xargs rm -rf
     fi
 }
