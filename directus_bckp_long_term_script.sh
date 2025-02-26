@@ -6,6 +6,8 @@ p=$(dirname $(dirname $(realpath $0)))
 # .env path
 ENV_PATH="${p}/.env"
 
+echo "${ENV_PATH}"
+
 # Load the .env file
 source ${ENV_PATH}
 
