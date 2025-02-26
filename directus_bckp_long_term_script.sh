@@ -4,7 +4,7 @@
 p=$(dirname $(dirname $(realpath $0)))
 
 # .env path
-ENV_PATH="${p}/.env"
+ENV_PATH="${p}/directus-backup/.env"
 
 echo "${ENV_PATH}"
 
