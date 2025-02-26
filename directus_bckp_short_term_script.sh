@@ -1,7 +1,13 @@
 #!/bin/bash
 
+# Obtain folder path
+p=$(dirname $(dirname $(realpath $0)))
+
+# .env path
+ENV_PATH="${p}/.env"
+
 # Load the .env file
-source .env
+source ${ENV_PATH}
 
 # Variables
 DATE=$(date +"%Y%m%d%H%M%S")
