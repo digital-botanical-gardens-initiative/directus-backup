@@ -26,19 +26,19 @@ vim .env
 - Making short term backups:
 
 ```sh
-/directus_bckp_short_term_script.sh
+./directus_bckp_short_term_script.sh
 ```
 
 - Making long term backups:
 
 ```sh
-/directus_bckp_long_term_script.sh
+./directus_bckp_long_term_script.sh
 ```
 
 - Restoring a backup:
 
 ```sh
-/directus_restore_script.sh </path/to/backup/folder> <backup timestamp in format YYYYMMDDHHMMSS>
+./directus_restore_script.sh </path/to/backup/folder> <backup timestamp in format YYYYMMDDHHMMSS>
 ```
 
 
