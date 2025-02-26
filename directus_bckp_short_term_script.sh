@@ -38,5 +38,5 @@ cleanup_backups() {
     fi
 }
 
-cleanup_backups "$BACKUP_LOCAL"
-cleanup_backups "$BACKUP_DISTANT"
+cleanup_backups "$BACKUP_DIR_LOCAL"
+cleanup_backups "$BACKUP_DIR_DISTANT"
