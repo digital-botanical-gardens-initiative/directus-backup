@@ -38,5 +38,5 @@ cleanup_backups() {
     fi
 }
 
-cleanup_backups "$BACKUP_DIR_LOCAL"
-cleanup_backups "$BACKUP_DIR_DISTANT"
+cleanup_backups "$BACKUP_DIR_LOCAL/short_term_bckp"
+cleanup_backups "$BACKUP_DIR_DISTANT/short_term_bckp"
